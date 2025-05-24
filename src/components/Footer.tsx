@@ -56,8 +56,16 @@ export default function Footer() {
         <MUILink
           style={{ cursor: "pointer", color: "#fff" }}
           onClick={() => redirect("/docs")}
+          sx={{ mr: 2 }}
         >
           Documentation
+        </MUILink>
+        <MUILink
+          style={{ cursor: "pointer", color: "#fff" }}
+          href="https://github.com/yanshekki/DeFund-Protocol/"
+          target="_blank"
+        >
+          Github
         </MUILink>
       </div>
       <h1
