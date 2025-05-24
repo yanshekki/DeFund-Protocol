@@ -73,12 +73,14 @@ const TimelinePage = () => {
       date: "May 2025",
       description:
         "Release the platform’s source code to promote transparency and community involvement.",
+      link: "https://github.com/yanshekki/DeFund-Protocol",
     },
     {
       title: "Create First Fund",
-      date: "To Be Determined",
+      date: "May 2025",
       description:
         "Launch the first fund on the platform to demonstrate functionality and attract early users.",
+      link: "https://defund.pro/panel/0xB2f57A77515974490dc37A53fca01f8fa9E81371",
     },
     {
       title: "Smart Contract Audit",
@@ -115,6 +117,19 @@ const TimelinePage = () => {
               <PaperStyled elevation={3}>
                 <TitleStyled variant="h6">{event.title}</TitleStyled>
                 <DateStyled>{event.date}</DateStyled>
+                <Typography>{event.description}</Typography>
+                {event.link && (
+                  <Typography>
+                    <a
+                      href={event.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: "#1976d2" }}
+                    >
+                      View More
+                    </a>
+                  </Typography>
+                )}
               </PaperStyled>
             </TimelineContent>
           </TimelineItem>
